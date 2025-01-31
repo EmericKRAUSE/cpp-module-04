@@ -4,10 +4,6 @@
 #include "../includes/WrongAnimal.hpp"
 #include "../includes/WrongCat.hpp"
 
-#include "Animal.hpp"
-#include "Dog.hpp"
-#include "Cat.hpp"
-
 int main()
 {
 	std::cout << "🔹 [Test 1] Création d'animaux dynamiquement :" << std::endl;

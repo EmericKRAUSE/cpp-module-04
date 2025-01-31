@@ -4,14 +4,14 @@
 // Constructor & Destructor
 WrongCat::WrongCat() : WrongAnimal()
 {
-	this->type = "WrongCat";
 	std::cout << "WrongCat Default constructor called" << std::endl;
+	this->type = "WrongCat";
 }
 
 WrongCat::WrongCat(const WrongCat& copy)
 {
-	*this = copy;
 	std::cout << "WrongCat Copy constructor called" << std::endl;
+	*this = copy;
 }
 
 WrongCat::~WrongCat()

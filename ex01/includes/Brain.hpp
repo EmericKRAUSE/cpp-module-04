@@ -18,6 +18,11 @@ class Brain
 		// ####################
 		// Operator Overload
 		Brain &operator=(const Brain& obj);
+
+		// ####################
+		// Methodes
+		//void setAnIdea(std::string idea, int i);
+		//void print
 };
 
 #endif

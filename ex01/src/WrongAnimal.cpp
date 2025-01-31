@@ -8,8 +8,8 @@ WrongAnimal::WrongAnimal()
 
 WrongAnimal::WrongAnimal(const WrongAnimal& copy)
 {
-	*this = copy;
 	std::cout << "WrongAnimal Copy constructor called" << std::endl;
+	*this = copy;
 }
 
 WrongAnimal::~WrongAnimal()

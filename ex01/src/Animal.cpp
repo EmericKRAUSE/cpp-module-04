@@ -8,8 +8,8 @@ Animal::Animal()
 
 Animal::Animal(const Animal& copy)
 {
-	*this = copy;
 	std::cout << "Animal Copy constructor called" << std::endl;
+	*this = copy;
 }
 
 Animal::~Animal()
