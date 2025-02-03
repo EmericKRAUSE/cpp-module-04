@@ -37,6 +37,22 @@ Cat& Cat::operator=(const Cat& obj)
 }
 
 // ####################
+// Getters and Setters
+std::string Cat::getIdea(const int index) const
+{
+	if (this->brain)
+		return (this->brain->getIdea(index));
+	else
+		return ("");
+}
+
+void Cat::setIdea(const std::string& idea, const int index)
+{
+	if (this->brain)
+		this->brain->setIdea(idea, index);
+}
+
+// ####################
 // Methodes
 void Cat::makeSound() const 
 { std::cout << "Miaou!" << std::endl; }

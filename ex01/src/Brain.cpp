@@ -23,3 +23,25 @@ Brain& Brain::operator=(const Brain& obj)
 			this->ideas[i] = obj.ideas[i];
 	return (*this);
 }
+
+// ####################
+// Getter and Setters
+void Brain::setIdea(const std::string& idea, const int index)
+{
+	if (index < 0 || index > 99)
+	{
+		std::cout << "Wrong index..." << std::endl;
+		return ;
+	}
+	this->ideas[index] = idea;
+}
+
+std::string Brain::getIdea(const int index) const
+{
+	if (index < 0 || index > 99)
+	{
+		std::cout << "Wrong index..." << std::endl;
+		return ("");
+	}
+	return (this->ideas[index]);
+}

@@ -6,18 +6,11 @@
 
 int main()
 {
-	// Animal* animals[10];
-	// for (int i = 0; i < 10; i++)
-	// {
-	// 	std::cout << i << std::endl;
-	// 	if (i < 5)
-	// 		animals[i] = new Cat;
-	// 	else
-	// 		animals[i] = new Dog;
-	// }
-	// for (int i = 0; i < 10; i++)
-	// 	delete animals[i];
-	Animal *dog = new Dog;
+	Cat cat;
+	Dog dog;
 
-	delete dog;
+	cat.setIdea("test", 0);
+	dog.setIdea("test", 0);
+	std::cout << cat.getIdea(0) << std::endl;
+	std::cout << dog.getIdea(0) << std::endl;
 }

@@ -37,6 +37,22 @@ Dog& Dog::operator=(const Dog& obj)
 }
 
 // ####################
+// Getters and Setters
+std::string Dog::getIdea(const int index) const
+{
+	if (this->brain)
+		return (this->brain->getIdea(index));
+	else
+		return ("");
+}
+
+void Dog::setIdea(const std::string& idea, const int index)
+{
+	if (this->brain)
+		this->brain->setIdea(idea, index);
+}
+
+// ####################
 // Methodes
 void Dog::makeSound() const
 { std::cout << "Woof Woof!" << std::endl; }

@@ -20,6 +20,11 @@ class Dog : public Animal
 		Dog& operator=(const Dog& obj);
 
 		// ####################
+		// Getters and Setters
+		std::string getIdea(const int index) const;
+		void setIdea(const std::string& idea, const int index);
+
+		// ####################
 		// Methodes
 		virtual void makeSound() const;
 };

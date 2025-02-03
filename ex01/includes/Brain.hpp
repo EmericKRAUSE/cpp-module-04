@@ -20,9 +20,9 @@ class Brain
 		Brain &operator=(const Brain& obj);
 
 		// ####################
-		// Methodes
-		//void setAnIdea(std::string idea, int i);
-		//void print
+		// Getters and Setters
+		void setIdea(const std::string& idea, const int index);
+		std::string getIdea(const int index) const;
 };
 
 #endif
