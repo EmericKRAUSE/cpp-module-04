@@ -1,6 +1,6 @@
 NAME	=	polymorphism
-CC		=	c++
-CFLAGS	=	-Wall -Wextra -Werror
+CXX		=	c++
+CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
 
 SRC		=	src/main.cpp\
 			src/Animal.cpp\
@@ -14,7 +14,7 @@ OBJ		=	$(SRC:.cpp=.o)
 all : $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+	$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
 
 clean:
 	rm -f $(OBJ)
