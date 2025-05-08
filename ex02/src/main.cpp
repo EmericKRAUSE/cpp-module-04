@@ -7,6 +7,6 @@
 int main()
 {
 	//Animal shouldNotWork;
-	Animal* animal = new Cat;
-	delete animal;
+	//Animal animal();
+	return (0);
 }
